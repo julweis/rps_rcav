@@ -1,0 +1,20 @@
+<h1>hello!</h1>
+<p>
+You played rock!
+</p>
+<%  options = ["rock", "paper", "scissors"] %>
+<% computer_move = options.sample %>
+
+<p>The computer played <%= @computer_move %> </p>
+
+<%  if @computer_move == "rock" %>
+<p>You tie!</p>
+<% end %>
+
+<%  if @computer_move == "paper" %>
+<p>You lose!</p>
+<% end %>
+
+<% if @computer_move == "scissors" %>
+<p>You win!</p>
+<% end %>
