@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   #every route has a string and a hash (string = typing into address bar, hash is ruby method )
+
+  get("/", { :controller => "game", :action=> "user_plays_rock" })
+  
   get("/rock", { :controller => "game", :action=> "user_plays_rock" })
 
   get("/paper", { :controller => "game", :action=> "user_plays_paper" })

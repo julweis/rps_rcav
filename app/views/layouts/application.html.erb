@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.css">
   <title>RockPaperScissors</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="page-header text-center">
+        <h2>Play rock, paper, scissors with the computer!
+        </h2>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8">
+      <div class="btn-group btn-group-justified">
+        <a href="/rock" type="button" class="btn  btn-primary">Play Rock</a>
+
+        <a href="/paper" type="button" class="btn btn-info">Play Paper</a>
+
+        <a href="/scissors" type="button" class="btn btn-primary">Play Scissors</a>
+
+      </div>
+    </div>
+  </div>
+  <hr>
 
 <%= yield %>
 

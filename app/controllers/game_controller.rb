@@ -10,10 +10,16 @@ class GameController < ApplicationController
 
   def user_plays_paper
 
+    options = ["rock", "paper", "scissors"]
+    @computer_move = options.sample
+    
     render ("game/play_paper.html.erb")
   end
-  
+
   def user_plays_scissors
+
+    options = ["rock", "paper", "scissors"]
+    @computer_move = options.sample
 
     render ("game/play_scissors.html.erb")
   end
